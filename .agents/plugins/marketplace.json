@@ -1,0 +1,32 @@
+{
+  "name": "taosheng-skills",
+  "interface": {
+    "displayName": "涛生 Skill"
+  },
+  "plugins": [
+    {
+      "name": "taosheng-popsci",
+      "source": {
+        "source": "local",
+        "path": "./plugins/taosheng-popsci"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "taosheng-work",
+      "source": {
+        "source": "local",
+        "path": "./plugins/taosheng-work"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

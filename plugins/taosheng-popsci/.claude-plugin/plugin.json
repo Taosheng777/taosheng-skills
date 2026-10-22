@@ -1,0 +1,17 @@
+{
+  "name": "taosheng-popsci",
+  "version": "1.0.0",
+  "description": "中文健康科普写作：有活人感、站得住、不灌水。",
+  "author": {
+    "name": "涛生",
+    "url": "https://github.com/Taosheng777"
+  },
+  "homepage": "https://taosheng777.github.io/ai/skills/",
+  "repository": "https://github.com/Taosheng777/taosheng-skills",
+  "license": "MIT",
+  "keywords": [
+    "writing",
+    "science-communication",
+    "中文"
+  ]
+}

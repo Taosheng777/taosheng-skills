@@ -1,0 +1,20 @@
+{
+  "name": "taosheng-skills",
+  "owner": {
+    "name": "涛生",
+    "url": "https://github.com/Taosheng777"
+  },
+  "description": "一个儿科医生每天在用的 AI 工作习惯：期刊短文投稿、科普写作、说人话、阶段汇报、公众号检索。Claude Code 与 Codex 通用。",
+  "plugins": [
+    {
+      "name": "taosheng-popsci",
+      "source": "./plugins/taosheng-popsci",
+      "description": "中文健康科普写作：有活人感、站得住、不灌水。"
+    },
+    {
+      "name": "taosheng-work",
+      "source": "./plugins/taosheng-work",
+      "description": "和 AI 一起干活的习惯：说人话、阶段完成用人话汇报、检索微信公众号文章。"
+    }
+  ]
+}

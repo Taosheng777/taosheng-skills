@@ -1,0 +1,18 @@
+{
+  "name": "taosheng-work",
+  "version": "1.0.0",
+  "description": "和 AI 一起干活的习惯：说人话、阶段完成用人话汇报、检索微信公众号文章。",
+  "author": {
+    "name": "涛生",
+    "url": "https://github.com/Taosheng777"
+  },
+  "homepage": "https://taosheng777.github.io/ai/skills/",
+  "repository": "https://github.com/Taosheng777/taosheng-skills",
+  "license": "MIT",
+  "keywords": [
+    "plain-language",
+    "reporting",
+    "wechat",
+    "中文"
+  ]
+}
