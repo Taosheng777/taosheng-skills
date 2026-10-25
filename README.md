@@ -6,9 +6,9 @@
 
 ## 视频工作台
 
-[在线打开视频工作台](https://taosheng777.github.io/ai/video-workbench/) · [独立 Skill v1.0.0](https://github.com/Taosheng777/video-workbench/tree/v1.0.0)。先选画风、看示例，再复制制作需求。
+[在线打开视频工作台](https://taosheng777.github.io/ai/video-workbench/) · [独立 Skill v1.0.1](https://github.com/Taosheng777/video-workbench/tree/v1.0.1)。先选画风、看示例，再复制制作需求。
 
-本次 v1.1.0 新增 taosheng-video 三个自有 Skill；原有 4 个 Skill 保持 v1.0.0 内容，不进行上游更新。
+v1.1.1 调整看板默认分类与显示顺序：先看个人作品，视频和图片优先。taosheng-video 的三个自有 Skill 保留；原有 4 个 Skill 保持 v1.0.0 内容，不进行上游更新。
 
 ## 装上
 

@@ -3,11 +3,15 @@
   const D = window.VIDEO_CATALOG;
   const $ = s => document.querySelector(s);
   const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  const all = D.items;
+  const categoryNames = {mine:'我的作品',all:'全部',mg:'MG 风格',styles:'艺术画风',grammar:'解说语法',anatomy:'原理拆解',motion:'产品动效',showcase:'原作者案例'};
+  const categoryOrder = Object.keys(categoryNames);
+  // 先让访客看到能播放的个人作品；有实物预览的示例排在纯文字前。
+  // 只调整显示顺序，不改冻结目录或收藏 ID。
+  const previewRank = x => x.video ? (x.category === 'mine' ? 0 : 1) : (x.poster || x.image) ? 2 : x.category === 'mine' ? 3 : 4;
+  const all = [...D.items].sort((a,b) => previewRank(a)-previewRank(b) || categoryOrder.indexOf(a.category)-categoryOrder.indexOf(b.category));
   const byId = new Map(all.map(x => [x.id,x]));
-  const categoryNames = {all:'全部',motion:'产品动效',styles:'艺术画风',grammar:'解说语法',showcase:'原作者案例',mg:'MG 风格',anatomy:'原理拆解',mine:'我的作品'};
-  const notes = {all:'现有收藏快照。演示是表达参考，制作时请围绕自己的题材重新设计。',motion:'5 支官方演示入口 + 20 种动效方向。按 C 画面批注需在 huashu-motion 的可编辑工程内使用。',styles:'35 种艺术画风，同一场景展示视觉差异。新题材请重新构图，不照搬示例的角色和房间。',grammar:'9 种解说语法。人物形象相关示例前往原作者页面查看。',showcase:'9 个原作者案例，保留固定版本出处；人物形象与成片不随本包重新分发。',mg:'15 支 MG 样片，保留作者与 MIT 许可。网页预览压缩体积，原作可从出处查看。',anatomy:'以拆解模型解释复杂结构。示例是火箭发动机，不是医学解剖图。',mine:'精选 6 支作品，各展示约 10 秒；另 2 支保留介绍。节选只展示形式，不替代完整科普语境。'};
-  let active = 'motion', savedOnly = false, toastTimer;
+  const notes = {all:'先看我的视频作品，再看其他视频与图片；文字介绍和原作者外链放在后面。',motion:'这里是 5 支原作者演示的外链和 20 种文字动效方向。按 C 批注需在 huashu-motion 的可编辑工程内使用。',styles:'35 种艺术画风，同一场景展示视觉差异。新题材请重新构图，不照搬示例的角色和房间。',grammar:'9 种解说语法：可播放的示例在前，人物形象相关示例前往原作者页面查看。',showcase:'9 个原作者案例，保留固定版本出处；人物形象与成片不随本包重新分发。',mg:'15 支 MG 样片，保留作者与 MIT 许可。网页预览压缩体积，原作可从出处查看。',anatomy:'以拆解模型解释复杂结构。示例是火箭发动机，不是医学解剖图。',mine:'先看我做过的 6 段 10 秒预览，点图片即可打开播放器；另外 2 支作品介绍放在最后。节选只展示形式，不替代完整科普语境。'};
+  let active = 'mine', savedOnly = false, toastTimer;
   let briefNotes = '我的主题：\n目标观众：\n期望时长与比例：';
   const publicSource = x => x.source ? new URL(x.source,'https://taosheng777.github.io/ai/video-workbench/').href : '';
   const safeRead = (key,fallback) => {try{return localStorage.getItem(key) ?? fallback}catch{return fallback}};
@@ -56,5 +60,5 @@
   document.addEventListener('click',e=>{const b=e.target.closest('button,a');if(!b)return;if(b.dataset.category){e.preventDefault();category(b.dataset.category,!b.classList.contains('tab'));history.replaceState(null,'',`#library-${b.dataset.category}`);return}if(b.dataset.open)return openItem(b.dataset.open);if(b.dataset.save)return toggle(b.dataset.save);if(b.dataset.copy)return copy(prompt(byId.get(b.dataset.copy)));if(b.dataset.collection)return copy(collections[Number(b.dataset.collection)].cmd);if(b.dataset.workflow)return copy(workflows[b.dataset.workflow]);if(b.dataset.remove){toggle(b.dataset.remove);openBrief();return}if(b.id==='copy-edited'){briefNotes=$('#brief-text').value;return copy(brief());}if(b.id==='clear-saved'){selected.clear();persist();renderItems();openBrief();}});
   $('#search').addEventListener('input',renderItems);$('#only-saved').onclick=()=>{savedOnly=!savedOnly;$('#only-saved').setAttribute('aria-pressed',savedOnly);renderItems()};$('#clear-search').onclick=()=>{$('#search').value='';savedOnly=false;$('#only-saved').setAttribute('aria-pressed','false');renderItems()};$('#open-brief').onclick=openBrief;$('#copy-brief').onclick=()=>copy(brief());$('#theme').onclick=()=>{preference=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=preference;try{localStorage.setItem('taosheng-video-theme',preference)}catch{}};
   $('.close').onclick=()=>$('#detail').close();$('#detail').addEventListener('close',()=>{const notes=$('#brief-text');if(notes)briefNotes=notes.value;$('#detail-content').querySelectorAll('video').forEach(v=>{v.pause();v.removeAttribute('src');v.load()})});$('#detail').addEventListener('click',e=>{if(e.target===$('#detail')){const r=e.target.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)e.target.close()}});
-  const hash=location.hash.replace('#library-','');category(hash in categoryNames?hash:'motion',false);updateSaved();
+  const hash=location.hash.replace('#library-','');category(Object.hasOwn(categoryNames,hash)?hash:'mine',false);updateSaved();
 })();
