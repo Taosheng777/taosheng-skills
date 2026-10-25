@@ -1,0 +1,350 @@
+[
+  {
+    "file": "styles-09_postimp.mp4",
+    "sha256": "55c59a1c1384921d9fdfc840d544a00cafa9ff21162b22c562ecdd3b86e44b05",
+    "bytes": 706066,
+    "sourceSha256": "0c37de464e180d38200a7d8a195f183020d4ab5e046b10c07f43052ed6b18cb9"
+  },
+  {
+    "file": "styles-08_impressionism.mp4",
+    "sha256": "bd6dce6873980e2655f65e98aafd93616c25ed02340a47dbcc719e28a91721b7",
+    "bytes": 629875,
+    "sourceSha256": "728015f1af4bd0dedc16dfe79d62c5a1d4b3a38e28e543149f53f388b050a37d"
+  },
+  {
+    "file": "styles-29_seurat.mp4",
+    "sha256": "d8f1804b139d55a76228578ee9b8f5f79abcb61dc0b0fb0b07eefd1646345435",
+    "bytes": 697116,
+    "sourceSha256": "fcf83ba3fee40382f40f0cb168ac66cec9db943d7d1ccd4edc1f4d58d73c749f"
+  },
+  {
+    "file": "styles-25_ghibli.mp4",
+    "sha256": "cdbb44d5aeb9309f132515d94ab8a94cc909a500931452299aee8d4143682942",
+    "bytes": 125504,
+    "sourceSha256": "93e486d40f9a5f709a25ee9aa6142c4b5027cd4912a84d088de8f5e098682a62"
+  },
+  {
+    "file": "styles-17_ink.mp4",
+    "sha256": "effa88f68ce10bfd89696090c9629c86b218381f8eb94ed6aa9a9a5f5cb26a44",
+    "bytes": 140801,
+    "sourceSha256": "25a616cde7955580f52cc0fe29b89c30fb016f8a87cbee37972d9e504c862457"
+  },
+  {
+    "file": "styles-13_pop.mp4",
+    "sha256": "5a9a858085e927e4b7f4d17bd8c6f2b67efe42b3cdda81c7d9cc7fed6444dbda",
+    "bytes": 543581,
+    "sourceSha256": "011a399fd766267e9eaa9920b9899beef08f4c37954ff53321690d1acfde7704"
+  },
+  {
+    "file": "styles-14_8bit.mp4",
+    "sha256": "b015aa82753a7b7fe49f77049de6b1cc5ce451932ffb4b2418b514315c034fa8",
+    "bytes": 131164,
+    "sourceSha256": "a4f5ca0cd1cc4f66affbe49600e006cefab8f51b46737e66cba54eb13dd30bce"
+  },
+  {
+    "file": "styles-26_vaporwave.mp4",
+    "sha256": "cfb4fec15fe533e76dd95c87c7e905bab81c3735e09aa28d6bbf036b271c82f0",
+    "bytes": 598334,
+    "sourceSha256": "8512620744c95cda59881e9d8155349377769b170c0c1102f5b22fc726890096"
+  },
+  {
+    "file": "styles-35_shinkai.mp4",
+    "sha256": "95075b7bdce9da95434234af71c11845e941a515752ab1ab8540480c69867fee",
+    "bytes": 102495,
+    "sourceSha256": "90b7688158570bcad0465f40f33097abfa91b9f46b2ba54b9d7474521522345f"
+  },
+  {
+    "file": "styles-32_rembrandt.mp4",
+    "sha256": "57ce32b2f1bc52898da79866dfd8a894e4bde2400a01e4986b239d77e13711b1",
+    "bytes": 133000,
+    "sourceSha256": "608eedc80f2a10352908994933f384e7122927315a5e8d8acbe8ccdb9f82dcc6"
+  },
+  {
+    "file": "styles-11_cubism.mp4",
+    "sha256": "5dcad3e1ad739ba5b0b17df80421c58fd7afb077fccb22123bb6eaf570e2cb51",
+    "bytes": 300538,
+    "sourceSha256": "091f7d2afb3fcd4b15fcc884e30301a212493f4f510c76830728be04fdbd72c4"
+  },
+  {
+    "file": "styles-30_matisse.mp4",
+    "sha256": "78386cafd1d31d6a5a1256aa7e495657572a4496d3b6ef33be420f50e1cf45dd",
+    "bytes": 265478,
+    "sourceSha256": "6b41f517a4e72152bcb6dc5eb6014a22152805d93aad441712a2e9e2afb17e4b"
+  },
+  {
+    "file": "styles-16_2026.mp4",
+    "sha256": "ae3422f8c47aeedb22b490228f29c27f05d8490957ed3719829ff9bf41a086f8",
+    "bytes": 121820,
+    "sourceSha256": "37301745e493a31781f0f84abb8ce696248d02c8077044808533a542d0c66462"
+  },
+  {
+    "file": "styles-22_constructivism.mp4",
+    "sha256": "e4ebd47c0fa489cac173bedec812d3b8e8fa99233a0cc520f7821108c20f2d3b",
+    "bytes": 213436,
+    "sourceSha256": "b2fe4e68e6e1a118cc33dc6315803fac29c8501b3a1bfbad4e5ff251393ad3a6"
+  },
+  {
+    "file": "styles-12_bauhaus.mp4",
+    "sha256": "394c908e59e9e69de189d381d5f682e57a86ee356707b1f3d8cc741c071cb23f",
+    "bytes": 233073,
+    "sourceSha256": "f1cf1f503b41a854f468b2814798fb6feaa9262d773f5c933f36b7a7de560cab"
+  },
+  {
+    "file": "styles-04_roman.mp4",
+    "sha256": "5d623ac374f27eb5174d865e664e154446cef3820bedd8e9feff354bdf42993e",
+    "bytes": 386397,
+    "sourceSha256": "7c72f4edaa5f29a991e4e76c9edefe77f9fce1af1790d9bf3f0afd84392b26b3"
+  },
+  {
+    "file": "styles-15_raytrace.mp4",
+    "sha256": "618ab469b2ca4a1806b295af3b49e3a1297a4921313ae8d78dad94d664c9b96f",
+    "bytes": 149261,
+    "sourceSha256": "8d2974f6ae206c40ea2633e887bec5926e5cc33a984606a299bea5b5f9e2c0cf"
+  },
+  {
+    "file": "styles-01_cave.mp4",
+    "sha256": "1360e1f54030576816b36169ed8584a0bb2a4c9a62acd0be1b053c6f0c923183",
+    "bytes": 399161,
+    "sourceSha256": "9f95b082e7bc4e36b015aecac391cf0d402a664653213ef337f8d0c86c35c32a"
+  },
+  {
+    "file": "styles-02_egypt.mp4",
+    "sha256": "6da800e2dd0ff963f1a8ad3011fd30ef71d177c4283857f3b0f6ec190b9ce79d",
+    "bytes": 392294,
+    "sourceSha256": "2d9b6b5cc02eea39e2d5d7d67503545d3a0d60e699c500ed64498c51893c8406"
+  },
+  {
+    "file": "styles-03_greek.mp4",
+    "sha256": "3ba2b0b3bf661ac623133e02bfe1343fde01adb07e6a47ed343ada7e1032e20d",
+    "bytes": 233600,
+    "sourceSha256": "a0cebbac1a53947eca7033fb435d8d18941f59cb65994c31657f3762906b2f47"
+  },
+  {
+    "file": "styles-05_gothic.mp4",
+    "sha256": "948a3a0c57dff693dce744be9bef9a93b838c8897aa16a7f7220ca75bf3690a6",
+    "bytes": 382795,
+    "sourceSha256": "34cf6aef519e3dcccbb41e25053590067d146b84e9c6404fe5dec7c74d444876"
+  },
+  {
+    "file": "styles-06_renaissance.mp4",
+    "sha256": "bf2f817200b05b688a83c4659a93165407b35764b337be895a8b31ff40232b0a",
+    "bytes": 144682,
+    "sourceSha256": "acf85697e505ea4e58c23b12047e0cbe03b69ec0dd63f644dfaabda89c5043a2"
+  },
+  {
+    "file": "styles-10_nouveau.mp4",
+    "sha256": "faca2a2b565c620c2f39392330f54ee42f0b87ef755c9f7425a022ac30e6060c",
+    "bytes": 533479,
+    "sourceSha256": "3678b264efc278acfdba85925cd4be11b5187f176f43a10b24fea34d2cfe3b0d"
+  },
+  {
+    "file": "styles-18_klimt.mp4",
+    "sha256": "3f4176c112ee72eedae663a0df5e2f6c01a8701bbc8042a51077413a83bda8ee",
+    "bytes": 585241,
+    "sourceSha256": "0e0637d63b0f992f4921495dd7da1229e13fa9922e294e9abb676754adeb19df"
+  },
+  {
+    "file": "styles-19_munch.mp4",
+    "sha256": "7ecbba946c86fe8ca6f16e704a7233cc08286dcab2e1766ddf771e7c70da6642",
+    "bytes": 715649,
+    "sourceSha256": "63c5b8762ae55f7634c9b1928679480fdd0c0b6e71e63773f147eb2ffb363647"
+  },
+  {
+    "file": "styles-20_dunhuang.mp4",
+    "sha256": "d78a481286cb6e9c30a6471541a43ee9f04d026b0d9bb43c393a01abaccecb43",
+    "bytes": 369755,
+    "sourceSha256": "2e230c817e2877006079e06cebb9fef95f067925675e82b476bad6f04c16fe4a"
+  },
+  {
+    "file": "styles-21_kusama.mp4",
+    "sha256": "c8f61d990f20068e9648b6c818eabd28ca59daeb736fa02152bd38ff20210ce4",
+    "bytes": 718896,
+    "sourceSha256": "b452b7586fb4a6381ea2775c07bd172cc9160bf2c5fcf33a506162d5c64f41f4"
+  },
+  {
+    "file": "styles-23_dali.mp4",
+    "sha256": "2a008d51397063bd4a7e119f8aa357c6a782aac4635b5ebeb562619d4c2c7c84",
+    "bytes": 80993,
+    "sourceSha256": "45c254e0500dece7b1312e8c7c8461e788d19f78b2d343850cb7ef06c6d8eeb2"
+  },
+  {
+    "file": "styles-24_hopper.mp4",
+    "sha256": "e83da5b2733d701ae707c7111392d89229eb84e3184d773da87744c989c3ca84",
+    "bytes": 73735,
+    "sourceSha256": "d3bf050af727b932d13c1d4e12d2053c39959fb7d8a88986d77b464f6a3ea17c"
+  },
+  {
+    "file": "styles-27_kirby.mp4",
+    "sha256": "e9c5b8582bd4350579946c943636c07387e8347f6a9918aadd5c6f499fb54332",
+    "bytes": 543410,
+    "sourceSha256": "9625dbbc9e5f4c4e000fba88a582bf723f633329449278283e27586dff48de0b"
+  },
+  {
+    "file": "styles-28_monet.mp4",
+    "sha256": "3d7ab0fd27e3e83c72a7363da1b3f626ebe3e3177ab9f82095efa0e29f482bbd",
+    "bytes": 704785,
+    "sourceSha256": "ad474466a1e4893f9896ad07460f8bee093d1b15e0a25d4d3b99f94bf51a3966"
+  },
+  {
+    "file": "styles-31_haring.mp4",
+    "sha256": "5370392d3aafde17c91b5aa1e6b36d92c443c3c0537538145d5078ff74f59a70",
+    "bytes": 324011,
+    "sourceSha256": "830532520107939e922e328c3517650f3f392a2cd0c98ff28ae9223aa2033f4f"
+  },
+  {
+    "file": "styles-33_rubberhose.mp4",
+    "sha256": "370eb7992280308564d86dd69de53541f3bf8ff72882336e9d5cec24c87eeb1f",
+    "bytes": 485732,
+    "sourceSha256": "c89157b2dee7b4f297653ab1cb835b6f4b28ea6dde70cd9c1ef54722bd5e60c8"
+  },
+  {
+    "file": "styles-34_shadowpuppet.mp4",
+    "sha256": "281cbe4ddf84e13c9c598de5f9dce2395a1eb8d7d817309c8d9fda362bcc6969",
+    "bytes": 186216,
+    "sourceSha256": "c6e8c51a99182ad721f0671e8f3e8225ab7e2df4bddc5affba79e12fd9b6ee6b"
+  },
+  {
+    "file": "styles-36_picasso_blue.mp4",
+    "sha256": "f7f7ad6ccd10db341ef6b37b112f254a3bd05fad20be60c51d43127d63de1c20",
+    "bytes": 84096,
+    "sourceSha256": "124339a9d95a435f1d0a54d13d95aa2237cfd0841cb226bb68d86c62367c195c"
+  },
+  {
+    "file": "grammar-y3_whiteboard.mp4",
+    "sha256": "f9efa46b99c2b14c1f0fa5aeca0f8240d2c0afc4dd0418b37cc8634f090f2a5c",
+    "bytes": 130830,
+    "sourceSha256": "ababc978d9a10e9928b3b08dca424074f48a77d518a618e9d25a894fe4015a01"
+  },
+  {
+    "file": "grammar-t1_3b1b.mp4",
+    "sha256": "b3d2360c791d7ba1cbed6af967eebca8e7664619678936b947ab388b8b8dba76",
+    "bytes": 53046,
+    "sourceSha256": "e7d8a6d4afe305058c0df95f34a366ca19c4601d607452dff6bbbe97935bcd6e"
+  },
+  {
+    "file": "grammar-y1_kurzgesagt.mp4",
+    "sha256": "5a84fb06f3b9c301a0b34af172cd7d227a7dfcf38d92b8a6b099def2a086f984",
+    "bytes": 108030,
+    "sourceSha256": "b7197768d1ae2fb309eb368b7320384d030f717337e546be0efa0da1b488146d"
+  },
+  {
+    "file": "grammar-y2_vox.mp4",
+    "sha256": "f778bfce65052eda4ce6b5e96d830cd9bd3ccd68638e10080bcb424833fc0b73",
+    "bytes": 331676,
+    "sourceSha256": "75664f971e532ee6f8c83079c611a85428f5cf9ccf34f8f516801c9c9ff614ff"
+  },
+  {
+    "file": "grammar-y5_kinetic_type.mp4",
+    "sha256": "d4d449fb6dacadee767e6c7d400908164081e171f34ce306f913d6667b437c88",
+    "bytes": 187139,
+    "sourceSha256": "a197e119a2ac9d3504585b8690c91d3862e8f9fd0622257d5d555b18db3c8fdc"
+  },
+  {
+    "file": "grammar-t2_keynote_ui.mp4",
+    "sha256": "0a748ecedab2ceeb8164dc25b70389fedeac42d205b6430b98de9ea9acf098a0",
+    "bytes": 124082,
+    "sourceSha256": "58707c0849d5e9e1cdb180eba891dc8669d193de19ac6db33057486410bd55c5"
+  },
+  {
+    "file": "grammar-t2_fullbleed_pulse.mp4",
+    "sha256": "0f3674960d5007229d096217ec4cf6779d4602ed6dd98847f437e6ab9474b8bc",
+    "bytes": 189663,
+    "sourceSha256": "0f19583b0593561777f4a6490a0374c1ed00d7e9815b6d76bd125ca2ce2f3153"
+  },
+  {
+    "file": "grammar-t3_finance_chart.mp4",
+    "sha256": "b9e4a3d910fdaacd2d0f83a4dccd61a69e5b35d99772e55c819d011e6c1e4236",
+    "bytes": 41203,
+    "sourceSha256": "64921272b136d9c166aaf4c221e7fa1629def95fb5b4eb890ddea0f981521eaa"
+  },
+  {
+    "file": "mg-01-flat-vector.mp4",
+    "sha256": "9f9e6e7999d62bc43875f7a94d1d0ec347e23aa66a068745ca87aeb8c7c98799",
+    "bytes": 587547,
+    "sourceSha256": "31015b94762c221b3517e97ea3e3a5c870776e763e8a1b0cf14a038a9e0eaf4c"
+  },
+  {
+    "file": "mg-02-line-art.mp4",
+    "sha256": "1442c62c596dc99dffbd93141c3751820597f1f0194ea5dd877457eaa09d599a",
+    "bytes": 311234,
+    "sourceSha256": "b9ec31dc45a6883b156cb19c52301580024058f5dd90bdd9aad0f1b18d245576"
+  },
+  {
+    "file": "mg-03-isometric.mp4",
+    "sha256": "841273b14749608e0e3134cf86fa6d4b1c422f45ae4e6aa0e00a1fac70a13cd9",
+    "bytes": 1213421,
+    "sourceSha256": "c5db2f47882df17f500622c7079313625b41200d4c5c485577d0b92c8dc50635"
+  },
+  {
+    "file": "mg-04-3d-render.mp4",
+    "sha256": "1be674fbd37f8724f2673ab1b24bd7e3d8c1f3a028559c9dd3800faeedb87968",
+    "bytes": 1551708,
+    "sourceSha256": "ad0756c4358e56a7e1a5b27772d66506f5b18c9131a73d5a93c932849e8110c0"
+  },
+  {
+    "file": "mg-05-cel-boil.mp4",
+    "sha256": "44dabf45f6af3b3c3a9340ea028153c553102a321d12068060ddc2ae037b9928",
+    "bytes": 1703450,
+    "sourceSha256": "4f4398983b231d75ceb90847af717cb4298c7f2d6e1c90cbdddef1919fbb2c9f"
+  },
+  {
+    "file": "mg-06-collage.mp4",
+    "sha256": "4d17a05385615e6e0b3b2b3bc33456c98b3fb02edd680cf6c61fd82f54df451a",
+    "bytes": 1576984,
+    "sourceSha256": "a124a518b426f34f674c681b77f516b43290b2bc2065613ec3643e2c509fb3fc"
+  },
+  {
+    "file": "mg-07-liquid.mp4",
+    "sha256": "ff21f434cd09adcb3677bd1dbaec7e0920fe3fee2c7e18b759d9675db4e244cd",
+    "bytes": 616755,
+    "sourceSha256": "01712cd0a22c91a61aeb7058c148c08bf487c3c87db3cc0fbe5d6d7003709151"
+  },
+  {
+    "file": "mg-08-morph.mp4",
+    "sha256": "213e89a323b645c76ef6cac04548d2cbb9ea74019928c1787f2b2e16522452f7",
+    "bytes": 376033,
+    "sourceSha256": "1bff049b1f15ea4d0d06ab9363a97497648a57f644420264f30b08548e3561d5"
+  },
+  {
+    "file": "mg-09-bauhaus.mp4",
+    "sha256": "48452dbdd7232e2e33ae15f532556021b32c02d7332cefdb0a91e3a73d6a37b7",
+    "bytes": 452362,
+    "sourceSha256": "7938c337896f5ec340a1e133e6ab74b9cac77be615defe6a2db228236465bb26"
+  },
+  {
+    "file": "mg-10-synthwave.mp4",
+    "sha256": "e455c18ac499973419ec452a9c9e03fb50271a9088a3c6d703bc51482e1a995a",
+    "bytes": 1741213,
+    "sourceSha256": "b8b3f6062a529b5941433b6095ff8be7e96c71c4f4a8efb62c1653165cf0c70f"
+  },
+  {
+    "file": "mg-12-aurora-glass.mp4",
+    "sha256": "0e3349692f23690c31fcda7758845b8595366856bcff502bbaf91b2851e43f38",
+    "bytes": 585310,
+    "sourceSha256": "d2575b46549b27f67c4823206caaccedae8cf397be0a351d0989db878c5fe364"
+  },
+  {
+    "file": "mg-18-hanazi.mp4",
+    "sha256": "6ad65ac729a1054b9205a4a235434616a019c22e8ee42419dd6cf45a531a39ff",
+    "bytes": 1727443,
+    "sourceSha256": "8ee8cb5f34290058939f2712336dc2e7b0e9fbf1c291d54e1a9fee8bc1b58bd0"
+  },
+  {
+    "file": "mg-19-paperclip.mp4",
+    "sha256": "c56e5f1e3ae4227379253bfec672726594b55aafc07c14677d925e33c727ed63",
+    "bytes": 1023486,
+    "sourceSha256": "615d1ef7810463861572093e4ab707a42bd996ef060b4f1b7ba85ebd4d77a905"
+  },
+  {
+    "file": "mg-20-pixel.mp4",
+    "sha256": "3add1346fcbbd3951f326054fe1246af67d03457a22d0cbf993372857013909b",
+    "bytes": 1444267,
+    "sourceSha256": "30768583c87795d57fd7d0d9a9ae7747d8cfe68b6c1af92a981a2c174798a6c8"
+  },
+  {
+    "file": "mg-22-hud.mp4",
+    "sha256": "b9c34c590a1e4d82ba09d85e1ea9ba1b7c904b173a168dc23956a216f7d7c3b2",
+    "bytes": 1082005,
+    "sourceSha256": "9c0a78d0b9f3107a1a59acc3716bf4276692e4c1e883d690c76995d64df543f0"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "name": "taosheng-video",
+  "version": "1.1.0",
+  "description": "2026-10-25 固定快照：视频风格看板、医学科普与通用短片流程。",
+  "author": {
+    "name": "涛生",
+    "url": "https://github.com/Taosheng777"
+  },
+  "homepage": "https://taosheng777.github.io/ai/skills/",
+  "repository": "https://github.com/Taosheng777/taosheng-skills",
+  "license": "MIT",
+  "keywords": [
+    "video",
+    "motion",
+    "science-communication",
+    "中文"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "涛生 · 视频工作台",
+    "shortDescription": "2026-10-25 固定快照：视频风格看板、医学科普与通用短片流程。",
+    "developerName": "涛生",
+    "category": "Productivity"
+  }
+}

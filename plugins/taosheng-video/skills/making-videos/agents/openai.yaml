@@ -1,0 +1,4 @@
+interface:
+  display_name: "通用短片创作"
+  short_description: "从立意、画风与样片到时间线和实际验片，制作可以继续修改的短片"
+  default_prompt: "用 $making-videos 把这个主题做成短片，先确定视觉母题、镜头节奏与样片方向。"

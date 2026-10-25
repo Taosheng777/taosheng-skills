@@ -1,0 +1,4 @@
+interface:
+  display_name: "医学科普视频"
+  short_description: "从事实卡到样片与成片，核对医学表达、画面和发布边界的便携工作流"
+  default_prompt: "用 $med-science-video 把这份材料做成医学科普视频，先整理事实依据与可审阅的脚本。"
