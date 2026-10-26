@@ -4,11 +4,15 @@
 
 我是涛生，医生，不是程序员。这些 skill 是我在门诊之外写论文、做科普、搭工具时，一条条跟 AI 磨出来的。放出来是为了让同样想把 AI 用进工作的人，直接拿到我现在在用的这一套。
 
+## 当前公开清单
+
+v1.1.2：按作者最新公开范围保留 7 个技能，分为科普写作、协作习惯、视频工作台三组。
+
 ## 视频工作台
 
 [在线打开视频工作台](https://taosheng777.github.io/ai/video-workbench/) · [独立 Skill v1.0.1](https://github.com/Taosheng777/video-workbench/tree/v1.0.1)。先选画风、看示例，再复制制作需求。
 
-v1.1.1 调整看板默认分类与显示顺序：先看个人作品，视频和图片优先。taosheng-video 的三个自有 Skill 保留；原有 4 个 Skill 保持 v1.0.0 内容，不进行上游更新。
+v1.1.1 调整看板默认分类与显示顺序：先看个人作品，视频和图片优先。taosheng-video 的三个自有 Skill 保留；其余技能不进行上游更新。
 
 ## 装上
 
@@ -21,7 +25,7 @@ v1.1.1 调整看板默认分类与显示顺序：先看个人作品，视频和�
 /plugin install taosheng-video@taosheng-skills
 ```
 
-按需装，不用全装。更新时在 Claude Code 输入 `/plugin marketplace update taosheng-skills`，再到 `/plugin` 的 Installed 中更新已安装的组；本次视频工作台保留固定快照，不自动追踪上游。
+三组按需装，不用全装。更新时在 Claude Code 输入 `/plugin marketplace update taosheng-skills`，再到 `/plugin` 的 Installed 中更新已安装的组；本次视频工作台保留固定快照，不自动追踪上游。
 
 **Codex**
 
