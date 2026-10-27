@@ -1,0 +1,7 @@
+interface:
+  display_name: "browser-harness"
+  short_description: "Control local Chrome through CDP"
+  default_prompt: "Use $browser-harness to control my local Chrome browser with browser-harness."
+
+policy:
+  allow_implicit_invocation: true

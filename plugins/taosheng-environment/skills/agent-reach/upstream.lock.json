@@ -1,0 +1,6 @@
+{
+  "repository": "Panniantong/Agent-Reach",
+  "release": "v1.6.0",
+  "commit": "beabda7486e9a666360b18cdb5c0e759c2c4d20f",
+  "local_overlay": "Native web first, no setup or session import, SSD launcher."
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: "MiniMax H3 制作中控"
+  short_description: "统筹 MiniMax H3 从剧本到完整成片，委派 Gemini 批量验片"
+  default_prompt: "用 $minimax-h3-director 把我的想法做成完整短片，由你统筹并交给 Gemini 批量查画面问题。"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,68 @@
+--- a/scripts/video_renderer.py
++++ b/scripts/video_renderer.py
+@@ -164,8 +164,11 @@
+     normalized_path=root/'normalized-narration.wav'
+     subprocess.run(['ffmpeg','-y','-v','error','-i',str(root/'narration.wav'),'-af','loudnorm=I=-17:TP=-2:LRA=7',
+                     '-ar',str(rate),'-ac','1','-c:a','pcm_f32le',str(normalized_path)],check=True)
++    mix_gain=float(json.loads((root.parent/'job.json').read_text()).get('audio',{}).get('mix_gain_db',0))
++    if not math.isfinite(mix_gain) or not -6 <= mix_gain <= 6:
++        raise ValueError('Mix gain must be finite and within -6..6 dB')
+     subprocess.run(['ffmpeg','-y','-v','error','-i',str(normalized_path),'-i',str(root/'music.wav'),
+-                    '-filter_complex','[0:a][1:a]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.89:level=false[out]',
++                    '-filter_complex',f'[0:a][1:a]amix=inputs=2:duration=first:normalize=0,volume={mix_gain}dB,alimiter=limit=0.89:level=false[out]',
+                     '-map','[out]','-ar',str(rate),'-ac','2',str(root/'mix.wav')],check=True)
+     with wave.open(str(root/'mix.wav'),'rb') as mixed_stream:
+         mixed_seconds=mixed_stream.getnframes()/mixed_stream.getframerate()
+--- a/scripts/stroke_assets.py
++++ b/scripts/stroke_assets.py
+@@ -198,7 +198,7 @@
+     return save_asset(name,rgba,reveal,segments,{'type':'marker_'+style})
+ 
+ 
+-def build_illustration(name, source_path, max_width, max_height, crop=None, parts=None):
++def build_illustration(name, source_path, max_width, max_height, crop=None, parts=None, white_key=253):
+     artwork=Image.open(source_path).convert('RGBA')
+     if crop is not None:
+         left, top, right, bottom = crop
+@@ -207,7 +207,7 @@
+         artwork = artwork.crop(tuple(crop))
+     if artwork.getextrema()[3] == (255, 255):
+         rgb = np.array(artwork)[:, :, :3]
+-        alpha = np.rint(np.clip((253-rgb.min(axis=2).astype(float))/18, 0, 1)*255).astype(np.uint8)
++        alpha = np.rint(np.clip((float(white_key)-rgb.min(axis=2).astype(float))/18, 0, 1)*255).astype(np.uint8)
+         artwork = Image.fromarray(np.dstack([rgb, alpha]))
+     artwork.thumbnail((max_width,max_height),Image.Resampling.LANCZOS)
+     pixels=np.array(artwork)
+@@ -243,7 +243,7 @@
+                 raise ValueError('exclude_hsv requires [hue_min, hue_max, saturation_min, value_min]')
+             hsv=np.asarray(artwork.convert('RGB').convert('HSV'),dtype=float)
+             hue=hsv[:,:,0]*360/255
+-            excluded=(hue>=exclusion[0])&(hue<=exclusion[1])&(hsv[:,:,1]>=exclusion[2]*255)&(hsv[:,:,2]>=exclusion[3]*255)
++            excluded=(hue>=exclusion[0])&(hue<=exclusion[1])&(hsv[:,:,1]>=exclusion[2]*255)&(hsv[:,:,2]>=exclusion[3]*255)&(alpha>128)
+             mask &= ~excluded
+         if not mask.any():
+             raise ValueError(f'Empty semantic part: {part["id"]}')
+--- a/scripts/video_job.py
++++ b/scripts/video_job.py
+@@ -153,7 +153,7 @@
+                 action.get('color', '#EAC958'), action.get('style', 'highlight'), action.get('line_width'))
+         elif kind == 'illustration':
+             source = resolve_input(self.root, action['source'])
+-            metadata = stroke_assets.build_illustration(name, source, int(action['width']), int(action['height']), action.get('crop'),action.get('parts'))
++            metadata = stroke_assets.build_illustration(name, source, int(action['width']), int(action['height']), action.get('crop'),action.get('parts'),action.get('white_key',253))
+         else:
+             raise ValueError(f'Unsupported action type: {kind}')
+         self.assets[name] = metadata
+@@ -248,7 +248,11 @@
+                 cues.append(beat.copy())
+                 audio_report.append({'id': beat_id, 'source': str(resolve_input(self.root, beat_spec['audio'])), **measurements})
+                 pieces.append(samples)
+-                pause_samples = np.zeros(round(float(options.get('sentence_pause_seconds', .18)) * SAMPLE_RATE), dtype=np.int16)
++                # Local project extension: explicit pause after this sentence.
++                sentence_pause = float(beat_spec.get('pause_seconds', options.get('sentence_pause_seconds', .18)))
++                if not math.isfinite(sentence_pause) or not 0 <= sentence_pause <= 6:
++                    raise ValueError('Sentence pause must be finite and within 0..6 seconds')
++                pause_samples = np.zeros(round(sentence_pause * SAMPLE_RATE), dtype=np.int16)
+                 pieces.append(pause_samples)
+                 cursor += duration + len(pause_samples) / SAMPLE_RATE
+             if page_spec.get('visual_groups'):

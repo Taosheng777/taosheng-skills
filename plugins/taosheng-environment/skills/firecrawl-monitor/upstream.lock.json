@@ -1,0 +1,7 @@
+{
+  "skill": "firecrawl-monitor",
+  "repository": "firecrawl/skills",
+  "base": "d3b5571fd44ff6fcd17510f5dd55f30f73ccf872",
+  "commit": "2bf714d9f45e85085036a533ceb943c8577aef2b",
+  "changed": []
+}

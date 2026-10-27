@@ -1,82 +1,99 @@
-# 涛生 Skill
+# 涛生完整技能环境
 
-一个儿科医生每天在用的 AI 工作习惯。Claude Code 和 Codex 都能装。
+把我现在使用的技能和协作习惯整理成一套可安装的环境。**v2.0.0 包含 102 个技能入口，老爷爷和它调用的 25 种方法都在包内。** 这次提供完整技能文件，不再只是放第三方推荐链接。
 
-我是涛生，医生，不是程序员。这些 skill 是我在门诊之外写论文、做科普、搭工具时，一条条跟 AI 磨出来的。放出来是为了让同样想把 AI 用进工作的人，直接拿到我现在在用的这一套。
+## 最省事的装法
 
-## 当前公开清单
+把这段话复制给电脑上的 AI：
 
-v1.1.2：按作者最新公开范围保留 7 个技能，分为科普写作、协作习惯、视频工作台三组。
+> 帮我完整安装 https://github.com/Taosheng777/taosheng-skills 的 v2.0.0。先阅读 README，安装 taosheng-environment 完整版，不要只添加市场或只装旧分组；确认 laoyeye 及配套方法可被发现。按我正在使用的 AI 工具选择安装目录，保留已有配置；再运行安装检查，按我的用途补齐缺少的工具。账号和服务权限由我自己登录配置。
 
-## 视频工作台
+装好后重开一个会话，说：**“老爷爷，我有个想法，但不知道从哪里开始。”**
 
-[在线打开视频工作台](https://taosheng777.github.io/ai/video-workbench/) · [独立 Skill v1.0.1](https://github.com/Taosheng777/video-workbench/tree/v1.0.1)。先选画风、看示例，再复制制作需求。
+### Claude Code
 
-v1.1.1 调整看板默认分类与显示顺序：先看个人作品，视频和图片优先。taosheng-video 的三个自有 Skill 保留；其余技能不进行上游更新。
-
-## 装上
-
-**Claude Code**
-
-```
+```text
 /plugin marketplace add Taosheng777/taosheng-skills
-/plugin install taosheng-popsci@taosheng-skills
-/plugin install taosheng-work@taosheng-skills
-/plugin install taosheng-video@taosheng-skills
+/plugin install taosheng-environment@taosheng-skills
 ```
 
-三组按需装，不用全装。更新时在 Claude Code 输入 `/plugin marketplace update taosheng-skills`，再到 `/plugin` 的 Installed 中更新已安装的组；本次视频工作台保留固定快照，不自动追踪上游。
+已经添加过市场的，先执行 `/plugin marketplace update taosheng-skills`，再安装完整版。旧的三个小分组可在插件管理器中停用，避免同名技能重复。
 
-**Codex**
+### Codex
 
-```
+```sh
 codex plugin marketplace add Taosheng777/taosheng-skills
+codex plugin add taosheng-environment@taosheng-skills
 ```
 
-然后在 Codex 的插件目录里选 `涛生 Skill`，装你要的那组。
+也可以在插件目录里安装 **「涛生完整技能环境 / taosheng-environment」**。添加市场只是登记来源，选中并安装完整版后，技能才会进入环境。
 
-也可以在 [发布页](https://github.com/Taosheng777/taosheng-skills/releases) 下载 ZIP。本地 ZIP 解压后，也可以用 `codex plugin marketplace add ./taosheng-skills` 添加解压目录。命令及清单按 [OpenAI 官方文档](https://developers.openai.com/plugins/build/plugins)与 [Claude Code 官方文档](https://code.claude.com/docs/en/plugin-marketplaces)核验；Claude 端安装仍需读者自己的可用账号。
+### 其他 AI：一次选择全部技能
 
-**其他 AI 工具，或者想挑着装**
-
-```
-npx skills add Taosheng777/taosheng-skills
+```sh
+npx skills add Taosheng777/taosheng-skills --skill '*'
 ```
 
-会问你装哪几个、装给哪个 AI。需要电脑上装过 Node.js。
+按提示选择目标 AI 和项目/全局目录。已在空白项目中实测发现并安装102项。
 
-**完全不会命令行**
+### 直接复制安装（可验证、可备份）
 
-在 Claude Code 或 Codex 里直接说：
+需要 Git 和 Python 3.10+。在任意工作目录执行：
 
-> 帮我安装这个 skill：https://github.com/Taosheng777/taosheng-skills/tree/main/plugins/taosheng-work/skills/explaining-in-plain-language
+```sh
+git clone --branch v2.0.0 --depth 1 https://github.com/Taosheng777/taosheng-skills.git
+cd taosheng-skills
+python3 scripts/install.py --target codex
+```
 
-把链接换成下面表里你想要的那个。
+Claude Code 将最后一行改成 `--target claude`；通用共享目录使用 `--target shared`。Windows 可用 `py -3` 代替 `python3`。
 
-## 有哪些
+安装器会校验包内文件摘要，完整复制技能，并输出安装数量及工具检查结果。**不会改你的模型、账号、代理或密钥。** 已有同名技能内容不同时会停止；确认需要替换，再加 `--replace`，旧文件会先备份。
 
-| 组 | skill | 干什么 | 你可以这样说 |
-|---|---|---|---|
-| 科普写作 | [human-writing](plugins/taosheng-popsci/skills/human-writing) | 中文健康科普：有具体的人、站得住、不灌水 | “把这份材料写成给家长看的科普” |
-| 协作习惯 | [explaining-in-plain-language](plugins/taosheng-work/skills/explaining-in-plain-language) | 把技术、机制、你自己的配置讲成外行能拍板的话 | “说人话” |
-| 协作习惯 | [stage-reporting](plugins/taosheng-work/skills/stage-reporting) | 阶段完成时用人话汇报：做成了什么、要不要你动手、要你决定什么 | “以后阶段完成用人话汇报” |
-| 协作习惯 | [wechat-article-search](plugins/taosheng-work/skills/wechat-article-search) | 搜索微信公众号文章并抓成 Markdown | “搜一下公众号里讲 XX 的文章” |
+若也想使用我的中文沟通、Markdown 文档、验收和协作习惯，可选：
 
-| 视频工作台 | [video-workbench](plugins/taosheng-video/skills/video-workbench) | 6 个创作入口、102 条固定收藏、示例预览与制作需求组合 | “给这支视频挑风格” |
-| 视频工作台 | [med-science-video](plugins/taosheng-video/skills/med-science-video) | 医学科普的事实、脚本、制作与验收 | “做一支面向家长的科普视频” |
-| 视频工作台 | [making-videos](plugins/taosheng-video/skills/making-videos) | 从立意与样张到通用短片成片检查 | “把这个观点做成短片” |
+```sh
+python3 scripts/install.py --target codex --rules-file ~/.codex/AGENTS.md
+# Claude Code 可改为 --target claude --rules-file ~/.claude/CLAUDE.md
+```
 
-**工作流模板**：[医生用 AI 的工作规则](templates/医生用AI的工作规则.md)。这不是 skill，是我自己的全局规则去掉个人信息后的版本，粘进 `CLAUDE.md` 或 `AGENTS.md` 就能用。
+规则只追加在独立标记区，保留已有内容并备份原文件。
 
-**我在用的别人的 skill**：[THIRD_PARTY.md](THIRD_PARTY.md)。都是原作者的作品，链接和安装命令直接指向原作者仓库，你装到的是作者维护的版本。
+## 装进去的是哪些能力
 
-## 说明
+| 类别 | 代表技能 |
+|---|---|
+| 思考与决策 | 老爷爷、点子王、专家会诊、事实核查、第一性原理、最小实验、双向钢人 |
+| 学习与表达 | 说人话、Human Writing、Stage Reporting、双层解释、寓言、学习教练 |
+| 科研 | 学术研究工作流、文献检索、引用核验、学术润色、科研作图、论文转 PPT |
+| 开发与协作 | 写任务书、文档收尾、查 Bug、代码行为准则、小程序开发工具链 |
+| 网页与资料 | Agent Reach、Firecrawl 系列、公众号检索、MarkItDown、照片定位 |
+| 视频与演示 | 视频工作台、医学科普与短片流程、花叔动效、手绘视频、字幕、Bento |
+| 投资研究 | 复盘、主线分析、载体筛选、A 股取数、同花顺接入 |
+| 本机 AI 协作 | Gemini / WorkBuddy 调度、模型桥接、浏览器适配、只读项目接入 |
 
-- 个人项目，按我自己的用法写成，没有稳定性承诺和技术支持。
-- 医学相关的 skill 帮你整理和写作，不替代临床判断；引用请回原文核对。
-- 这些 skill 不收集你的数据。`wechat-article-search` 会访问公开网页搜索结果，可选使用你自己登录的 Firecrawl。
-- 自有代码与流程适用 [MIT](LICENSE)，保留署名。第三方媒体按各自许可证；个人作品节选用于本看板展示，不统一改标 MIT。人物形象、商标和第三方配乐不因本包而获得额外授权。详见视频工作台来源页。
+完整逐项清单见 [CATALOG.md](CATALOG.md)，每个技能都能在 `plugins/taosheng-environment/skills/` 找到实际文件。
 
-更多：[涛生的网站](https://taosheng777.github.io/) · [更新记录](CHANGELOG.md)
+## 安装后还缺什么
 
-我的其他公开仓库：[a-share-mainline-os](https://github.com/Taosheng777/a-share-mainline-os)、[BigA-stock-skills](https://github.com/Taosheng777/BigA-stock-skills)（A 股研究，只提示不下单）、[teach-skill](https://github.com/Taosheng777/teach-skill)（Codex 学习教练）、[deepseek-search-mcp](https://github.com/Taosheng777/deepseek-search-mcp)（DeepSeek 搜索 MCP）。
+```sh
+python3 scripts/install.py --doctor --target codex
+```
+
+技能是工作方法和脚本，账号、付费额度、浏览器登录、官方应用插件及大型软件需要使用者自己的环境。[ENVIRONMENT.md](ENVIRONMENT.md) 列了逐类补齐方法。安装器不把“文件复制成功”冒充“所有外部服务已登录可用”。
+
+本机 100 个个人/共享技能入口中，98 个进入本包；1 项私人技能不分发，1 项无头剪映受原许可限制不能作为公开合集打包。另保留公开版已有的 Human Writing 和 3 项视频技能，所以总共 102 个。官方应用自带的插件不从托管缓存复制，请在自己的应用内安装授权。
+
+## 来源与许可
+
+- 老爷爷与思考方法：[LearnPrompt/laoyeye](https://github.com/LearnPrompt/laoyeye)，保留其中 [Matt Pocock](https://github.com/mattpocock/skills)、[数字生命卡兹克](https://github.com/KKKKhazix/khazix-skills)、[卡尔](https://github.com/LearnPrompt/partner-skill)、[ayghri](https://github.com/ayghri/i-have-adhd) 及其他原作者的出处与原许可。
+- 学术研究：[Imbad0202/academic-research-skills](https://github.com/Imbad0202/academic-research-skills)、experiment-agent；含 **CC BY-NC 4.0** 内容，仅限非商业使用。
+- 科研辅助：[Orchestra Research / AI Research Skills](https://github.com/Orchestra-Research/AI-Research-SKILLs)。
+- 检索与浏览：[Agent Reach](https://github.com/Panniantong/Agent-Reach)、[Firecrawl](https://github.com/firecrawl/skills)、[Browser Harness](https://github.com/browser-use/browser-harness)、[MarkItDown](https://github.com/microsoft/markitdown)、[Geo Sleuth](https://github.com/Oldcircle/geo-sleuth)、[REA](https://github.com/morluto/rea)。
+- 创作：[花叔动效](https://github.com/alchaincyf/huashu-motion)、[手绘视频](https://github.com/threerocks/sweety-handdraw-video)、[乔木 Bento](https://github.com/joeseesun/qiaomu-bento-ppt)、[公众号排版](https://github.com/isjiamu/gzh-design-skill)，其中公众号排版沿用 AGPL-3.0。
+- 数据：[A 股数据](https://github.com/simonlin1212/a-stock-data)；同花顺、微信开发者工具相关内容保留其官方出处和本机适配。
+- 其余本机定制与适配保留文件内原有署名；分发来源记录见 [SOURCES.json](SOURCES.json)。未找到独立上游的适配不会冒称全新原创或擅自授予第三方内容 MIT 许可。
+
+**不是整个包统一 MIT。** 根目录许可仅覆盖自有分发工具；各组件的原许可证、NOTICE、字体和素材条款继续有效，详见 [NOTICE.md](NOTICE.md)。无头剪映不在包内，个人使用请从 [原作者仓库](https://github.com/mcncarl/jianying-headless) 获取并遵守其条款。
+
+这些是个人使用的工作流。医学工具用于资料整理和写作，不替代临床判断；投资工具不下单、不构成投资建议。未验证的结果应由使用者核实。

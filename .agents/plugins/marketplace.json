@@ -1,38 +1,14 @@
 {
   "name": "taosheng-skills",
   "interface": {
-    "displayName": "涛生 Skill"
+    "displayName": "涛生完整技能环境"
   },
   "plugins": [
     {
-      "name": "taosheng-popsci",
+      "name": "taosheng-environment",
       "source": {
         "source": "local",
-        "path": "./plugins/taosheng-popsci"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Productivity"
-    },
-    {
-      "name": "taosheng-work",
-      "source": {
-        "source": "local",
-        "path": "./plugins/taosheng-work"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Productivity"
-    },
-    {
-      "name": "taosheng-video",
-      "source": {
-        "source": "local",
-        "path": "./plugins/taosheng-video"
+        "path": "./plugins/taosheng-environment"
       },
       "policy": {
         "installation": "AVAILABLE",

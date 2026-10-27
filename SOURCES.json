@@ -1,0 +1,864 @@
+[
+  {
+    "name": "a-stock-data",
+    "path": "plugins/taosheng-environment/skills/a-stock-data",
+    "origin": "https://github.com/simonlin1212/a-stock-data",
+    "notices": [
+      "LICENSE",
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "academic-plotting",
+    "path": "plugins/taosheng-environment/skills/academic-plotting",
+    "origin": "https://github.com/zechenzhangAGI/AI-research-SKILLs",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "academic-research-suite",
+    "path": "plugins/taosheng-environment/skills/academic-research-suite",
+    "origin": "https://github.com/Imbad0202/academic-research-skills",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "agent-reach",
+    "path": "plugins/taosheng-environment/skills/agent-reach",
+    "origin": "https://github.com/Panniantong/Agent-Reach",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "brainstorming-research-ideas",
+    "path": "plugins/taosheng-environment/skills/brainstorming-research-ideas",
+    "origin": "https://github.com/zechenzhangAGI/AI-research-SKILLs",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "browser-harness",
+    "path": "plugins/taosheng-environment/skills/browser-harness",
+    "origin": "https://github.com/browser-use/browser-harness",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "carl-idea-king",
+    "path": "plugins/taosheng-environment/skills/carl-idea-king",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt",
+      "partner-skill-MIT.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "codex-cli-model-bridge",
+    "path": "plugins/taosheng-environment/skills/codex-cli-model-bridge",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [
+      "LICENSE"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "creative-thinking-for-research",
+    "path": "plugins/taosheng-environment/skills/creative-thinking-for-research",
+    "origin": "https://github.com/zechenzhangAGI/AI-research-SKILLs",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "cross-domain-borrow",
+    "path": "plugins/taosheng-environment/skills/cross-domain-borrow",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "eli5",
+    "path": "plugins/taosheng-environment/skills/eli5",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "expert-panel",
+    "path": "plugins/taosheng-environment/skills/expert-panel",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "explaining-in-plain-language",
+    "path": "plugins/taosheng-environment/skills/explaining-in-plain-language",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "fact-check",
+    "path": "plugins/taosheng-environment/skills/fact-check",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "firecrawl",
+    "path": "plugins/taosheng-environment/skills/firecrawl",
+    "origin": "https://github.com/firecrawl/skills",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "firecrawl-agent",
+    "path": "plugins/taosheng-environment/skills/firecrawl-agent",
+    "origin": "https://github.com/firecrawl/skills",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "firecrawl-build",
+    "path": "plugins/taosheng-environment/skills/firecrawl-build",
+    "origin": "https://github.com/firecrawl/skills",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "firecrawl-build-interact",
+    "path": "plugins/taosheng-environment/skills/firecrawl-build-interact",
+    "origin": "https://github.com/firecrawl/skills",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "firecrawl-build-onboarding",
+    "path": "plugins/taosheng-environment/skills/firecrawl-build-onboarding",
+    "origin": "https://github.com/firecrawl/skills",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "firecrawl-build-scrape",
+    "path": "plugins/taosheng-environment/skills/firecrawl-build-scrape",
+    "origin": "https://github.com/firecrawl/skills",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "firecrawl-build-search",
+    "path": "plugins/taosheng-environment/skills/firecrawl-build-search",
+    "origin": "https://github.com/firecrawl/skills",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "firecrawl-crawl",
+    "path": "plugins/taosheng-environment/skills/firecrawl-crawl",
+    "origin": "https://github.com/firecrawl/skills",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "firecrawl-developer-index",
+    "path": "plugins/taosheng-environment/skills/firecrawl-developer-index",
+    "origin": "https://github.com/firecrawl/skills",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "firecrawl-download",
+    "path": "plugins/taosheng-environment/skills/firecrawl-download",
+    "origin": "https://github.com/firecrawl/skills",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "firecrawl-interact",
+    "path": "plugins/taosheng-environment/skills/firecrawl-interact",
+    "origin": "https://github.com/firecrawl/skills",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "firecrawl-map",
+    "path": "plugins/taosheng-environment/skills/firecrawl-map",
+    "origin": "https://github.com/firecrawl/skills",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "firecrawl-monitor",
+    "path": "plugins/taosheng-environment/skills/firecrawl-monitor",
+    "origin": "https://github.com/firecrawl/skills",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "firecrawl-parse",
+    "path": "plugins/taosheng-environment/skills/firecrawl-parse",
+    "origin": "https://github.com/firecrawl/skills",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "firecrawl-research-index",
+    "path": "plugins/taosheng-environment/skills/firecrawl-research-index",
+    "origin": "https://github.com/firecrawl/skills",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "firecrawl-scrape",
+    "path": "plugins/taosheng-environment/skills/firecrawl-scrape",
+    "origin": "https://github.com/firecrawl/skills",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "firecrawl-search",
+    "path": "plugins/taosheng-environment/skills/firecrawl-search",
+    "origin": "https://github.com/firecrawl/skills",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "first-principles",
+    "path": "plugins/taosheng-environment/skills/first-principles",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "gemini-dispatch",
+    "path": "plugins/taosheng-environment/skills/gemini-dispatch",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "geo-sleuth",
+    "path": "plugins/taosheng-environment/skills/geo-sleuth",
+    "origin": "https://github.com/Oldcircle/geo-sleuth",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "gzh-design",
+    "path": "plugins/taosheng-environment/skills/gzh-design",
+    "origin": "https://github.com/isjiamu/gzh-design-skill",
+    "notices": [
+      "LICENSE",
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "hand-drawn",
+    "path": "plugins/taosheng-environment/skills/hand-drawn",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [
+      "LICENSE"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "hatch-pet",
+    "path": "plugins/taosheng-environment/skills/hatch-pet",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [
+      "LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "hidden-talent",
+    "path": "plugins/taosheng-environment/skills/hidden-talent",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "hithink-finance",
+    "path": "plugins/taosheng-environment/skills/hithink-finance",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "hithink-finance-data",
+    "path": "plugins/taosheng-environment/skills/hithink-finance-data",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "hithink-finance-financials",
+    "path": "plugins/taosheng-environment/skills/hithink-finance-financials",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "hithink-finance-fund",
+    "path": "plugins/taosheng-environment/skills/hithink-finance-fund",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "hithink-finance-index",
+    "path": "plugins/taosheng-environment/skills/hithink-finance-index",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "hithink-finance-market",
+    "path": "plugins/taosheng-environment/skills/hithink-finance-market",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "hithink-finance-research",
+    "path": "plugins/taosheng-environment/skills/hithink-finance-research",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "hithink-finance-shared",
+    "path": "plugins/taosheng-environment/skills/hithink-finance-shared",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "hithink-finance-special-data",
+    "path": "plugins/taosheng-environment/skills/hithink-finance-special-data",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "hithink-finance-symbol",
+    "path": "plugins/taosheng-environment/skills/hithink-finance-symbol",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "hithink-finance-valuation",
+    "path": "plugins/taosheng-environment/skills/hithink-finance-valuation",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "horizontal-vertical-analysis",
+    "path": "plugins/taosheng-environment/skills/horizontal-vertical-analysis",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "huashu-motion",
+    "path": "plugins/taosheng-environment/skills/huashu-motion",
+    "origin": "https://github.com/alchaincyf/huashu-motion",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "human-writing",
+    "path": "plugins/taosheng-environment/skills/human-writing",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "inversion",
+    "path": "plugins/taosheng-environment/skills/inversion",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "jev-browser",
+    "path": "plugins/taosheng-environment/skills/jev-browser",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "johari-window",
+    "path": "plugins/taosheng-environment/skills/johari-window",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "karpathy-guidelines",
+    "path": "plugins/taosheng-environment/skills/karpathy-guidelines",
+    "origin": "https://github.com/forrestchang/andrej-karpathy-skills",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "kaz-leader",
+    "path": "plugins/taosheng-environment/skills/kaz-leader",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt",
+      "khazix-skills-MIT.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "kaz-neat-freak",
+    "path": "plugins/taosheng-environment/skills/kaz-neat-freak",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt",
+      "khazix-skills-MIT.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "laoyeye",
+    "path": "plugins/taosheng-environment/skills/laoyeye",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "leader",
+    "path": "plugins/taosheng-environment/skills/leader",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "life-design",
+    "path": "plugins/taosheng-environment/skills/life-design",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "making-videos",
+    "path": "plugins/taosheng-environment/skills/making-videos",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "markitdown",
+    "path": "plugins/taosheng-environment/skills/markitdown",
+    "origin": "https://github.com/microsoft/markitdown",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "matt-diagnosing-bugs",
+    "path": "plugins/taosheng-environment/skills/matt-diagnosing-bugs",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt",
+      "mattpocock-skills-MIT.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "matt-grill-me",
+    "path": "plugins/taosheng-environment/skills/matt-grill-me",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt",
+      "mattpocock-skills-MIT.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "matt-grilling",
+    "path": "plugins/taosheng-environment/skills/matt-grilling",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt",
+      "mattpocock-skills-MIT.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "matt-teach",
+    "path": "plugins/taosheng-environment/skills/matt-teach",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt",
+      "mattpocock-skills-MIT.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "med-science-video",
+    "path": "plugins/taosheng-environment/skills/med-science-video",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "memory-parable",
+    "path": "plugins/taosheng-environment/skills/memory-parable",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "migrate-to-codex",
+    "path": "plugins/taosheng-environment/skills/migrate-to-codex",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [
+      "LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "minimax-h3-director",
+    "path": "plugins/taosheng-environment/skills/minimax-h3-director",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "minimum-experiment",
+    "path": "plugins/taosheng-environment/skills/minimum-experiment",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "nature-academic-search",
+    "path": "plugins/taosheng-environment/skills/nature-academic-search",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "nature-citation",
+    "path": "plugins/taosheng-environment/skills/nature-citation",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "nature-data",
+    "path": "plugins/taosheng-environment/skills/nature-data",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "nature-figure",
+    "path": "plugins/taosheng-environment/skills/nature-figure",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "nature-paper2ppt",
+    "path": "plugins/taosheng-environment/skills/nature-paper2ppt",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "nature-polishing",
+    "path": "plugins/taosheng-environment/skills/nature-polishing",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "no-fluff-output",
+    "path": "plugins/taosheng-environment/skills/no-fluff-output",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt",
+      "ayghri-i-have-adhd-MIT.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "parable",
+    "path": "plugins/taosheng-environment/skills/parable",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "pdf",
+    "path": "plugins/taosheng-environment/skills/pdf",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [
+      "LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "playwright",
+    "path": "plugins/taosheng-environment/skills/playwright",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [
+      "NOTICE.txt",
+      "LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "presenting-conference-talks",
+    "path": "plugins/taosheng-environment/skills/presenting-conference-talks",
+    "origin": "https://github.com/zechenzhangAGI/AI-research-SKILLs",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "project-to-chatgpt",
+    "path": "plugins/taosheng-environment/skills/project-to-chatgpt",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "qiaomu-bento-ppt",
+    "path": "plugins/taosheng-environment/skills/qiaomu-bento-ppt",
+    "origin": "https://github.com/joeseesun/qiaomu-bento-ppt",
+    "notices": [
+      "LICENSE",
+      "NOTICE.md",
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "reverse-engineer-anything",
+    "path": "plugins/taosheng-environment/skills/reverse-engineer-anything",
+    "origin": "https://github.com/morluto/rea",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "reverse-teardown",
+    "path": "plugins/taosheng-environment/skills/reverse-teardown",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "socratic-inquiry",
+    "path": "plugins/taosheng-environment/skills/socratic-inquiry",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "stage-reporting",
+    "path": "plugins/taosheng-environment/skills/stage-reporting",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "steelman-both-sides",
+    "path": "plugins/taosheng-environment/skills/steelman-both-sides",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "stock-buddy",
+    "path": "plugins/taosheng-environment/skills/stock-buddy",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "stock-daily",
+    "path": "plugins/taosheng-environment/skills/stock-daily",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "stock-screener",
+    "path": "plugins/taosheng-environment/skills/stock-screener",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "sweety-handdraw-video",
+    "path": "plugins/taosheng-environment/skills/sweety-handdraw-video",
+    "origin": "https://github.com/threerocks/sweety-handdraw-video",
+    "notices": [
+      "LICENSE",
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "teach",
+    "path": "plugins/taosheng-environment/skills/teach",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "two-layer-explain",
+    "path": "plugins/taosheng-environment/skills/two-layer-explain",
+    "origin": "https://github.com/LearnPrompt/laoyeye",
+    "notices": [
+      "UPSTREAM-LICENSE.txt"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "video-to-subtitle-summary",
+    "path": "plugins/taosheng-environment/skills/video-to-subtitle-summary",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [
+      "LICENSE"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "video-workbench",
+    "path": "plugins/taosheng-environment/skills/video-workbench",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "wechat-article-search",
+    "path": "plugins/taosheng-environment/skills/wechat-article-search",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [
+      "LICENSE"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "wechatide-skill",
+    "path": "plugins/taosheng-environment/skills/wechatide-skill",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  },
+  {
+    "name": "workbuddy-cli-model-bridge",
+    "path": "plugins/taosheng-environment/skills/workbuddy-cli-model-bridge",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [
+      "LICENSE"
+    ],
+    "locally_adapted": true
+  },
+  {
+    "name": "workbuddy-dispatch",
+    "path": "plugins/taosheng-environment/skills/workbuddy-dispatch",
+    "origin": "本机定制/适配快照；保留文件内原有出处",
+    "notices": [],
+    "locally_adapted": true
+  }
+]

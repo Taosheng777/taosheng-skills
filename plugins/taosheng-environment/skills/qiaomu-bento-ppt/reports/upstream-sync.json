@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "mode": "update",
+  "repository": "nyblnet/bento",
+  "previous_tag": "v1.0.10",
+  "current_tag": "v1.0.19",
+  "upstream": {
+    "tag": "v1.0.19",
+    "commit": "01000838496ec863ba1035eae12a8a4943020cdc",
+    "published_at": "2026-09-04T22:49:40Z"
+  },
+  "outdated": true,
+  "updated": true,
+  "changed_files": [
+    "assets/bento/Bento_Slides.bento.html",
+    "references/upstream/bento-official-skill.md",
+    "references/upstream/bento-agents.md",
+    "references/upstream/bento-format.md"
+  ],
+  "stage_errors": [],
+  "rollback_boundary": "all upstream files are staged and validated before an atomic replacement transaction",
+  "local_errors": []
+}

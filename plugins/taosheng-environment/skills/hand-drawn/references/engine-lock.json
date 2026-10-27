@@ -1,0 +1,31 @@
+{
+  "source": "https://github.com/threerocks/sweety-handdraw-video",
+  "commit": "216a199a4ee7bb85e777a145a6fc116ddf985809",
+  "profiles": [
+    {
+      "id": "216a199-local-drawing-fixes",
+      "changes": [
+        "per-sentence pauses",
+        "configurable white key",
+        "opaque semantic edges",
+        "bounded audio gain"
+      ],
+      "files": {
+        "scripts/clean_image.py": "c7918b81066948d300a5f570b84012f286d5704f9fe7178fdcf7d4baa987f484",
+        "scripts/art_direction.py": "9816b01c2cbd258db2c2124b21b15056450505ead848756b274961f9b9c2d642",
+        "scripts/video_verifier.py": "b0a6342114ab5381f575b36e8110413ceda416175360bd76273ee26bb1eb1ed5",
+        "scripts/hand_assets.py": "220b0b1b425c24a180fa68e9b64424d5702f75e846327f1a04be54bde72017c1",
+        "scripts/handdraw_video.py": "f49b239a46c6f665a199267ac6e944702d9fadf5a8b35c1e181ebdab745c9eb2",
+        "scripts/voice_studio.py": "90026b95059d7579d9078c66a2520469ac7cbb531ea686c0dbcfac793060ea00",
+        "scripts/stroke_paths.py": "a693bc606e8b0a05774e945d053302bbbff18e7052dfc7e49a87f9adaeb80c06",
+        "scripts/video_renderer.py": "a24c4fd28dbaa8e911beb79c9e1381b58884917fd419420a492ab7542d98d158",
+        "scripts/paint_motion.py": "efbf701d068ef3af41ffbd690917b0c60bae1bca52fe79cb5ae7ca6d48e00289",
+        "scripts/timeline_contract.py": "1e712c121f6b18479a732f8f20384d72af07d969457d85e947c9092dea64d755",
+        "scripts/stroke_assets.py": "231bc105eaedab62e45345cd9414c7bbc4f2b20ca2f93cb826fdc62b3965c731",
+        "scripts/video_job.py": "f5011e97b2cc5b0ddf9e0c89c7b44abd6e69eb27430e72fa9798f8d34223fe49",
+        "assets/hands/catalog.json": "017bfba9be5bb126dcac86f958c7e205a578279d5e8d0f3172f18d71e95f239e",
+        "dependencies/sweety-image-art-direction/GUIDE.md": "fbbfd33d70f729011b6a6bc232851c116cd4a89ead2adea4462888a6ce26fc1a"
+      }
+    }
+  ]
+}

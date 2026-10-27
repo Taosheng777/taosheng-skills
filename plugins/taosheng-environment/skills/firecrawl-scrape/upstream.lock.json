@@ -1,0 +1,9 @@
+{
+  "skill": "firecrawl-scrape",
+  "repository": "firecrawl/skills",
+  "base": "76471185105154e70186bb3be5abee5419535143",
+  "commit": "2bf714d9f45e85085036a533ceb943c8577aef2b",
+  "changed": [
+    "SKILL.md"
+  ]
+}

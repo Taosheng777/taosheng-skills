@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "protected_native_model_ids": [
+    "gpt-5.6-sol",
+    "gpt-5.6-terra",
+    "gpt-5.6-luna",
+    "gpt-5.5",
+    "gpt-5.4",
+    "gpt-5.4-mini",
+    "gpt-5.3-codex-spark"
+  ],
+  "hidden_native_model_ids": [
+    "gpt-5.5",
+    "gpt-5.4",
+    "gpt-5.4-mini",
+    "gpt-5.3-codex-spark"
+  ],
+  "native_model_overrides": {
+    "gpt-5.6-sol": {
+      "context_window": 1000000,
+      "max_context_window": 1000000
+    }
+  },
+  "minimum_context_windows": {
+    "gpt-5.6-sol": 1000000
+  },
+  "require_desktop_catalog": true
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: "老爷爷 · Laoyeye"
+  short_description: "中文说“老爷爷”即可调用；结合当前卡点选择并执行合适的思考工具"
+  default_prompt: "调用 $laoyeye（老爷爷）Skill，根据当前对话选择并执行适合我处境的方法。"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,4 @@
+interface:
+  display_name: "项目接入 ChatGPT"
+  short_description: "将已授权本地项目接入现有只读 MCP，核对资料范围并完成真实查询验收"
+  default_prompt: "使用 $project-to-chatgpt 将这个项目接入 ChatGPT，复用现有只读 MCP 并验证当前资料可读。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "视频转写与读书笔记"
+  short_description: "将短视频转为高准确率字幕，并围绕用户共鸣整理成可读文章"
+  default_prompt: "使用 $video-to-subtitle-summary 转写这个视频，并围绕我最有感触的点整理成一篇文章。"

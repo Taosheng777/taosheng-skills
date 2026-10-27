@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "glm-coding",
+  "display_name": "GLM Coding Plan",
+  "cli": {
+    "commands": ["zcode"]
+  },
+  "cliproxy": {
+    "provider": "glm-coding"
+  },
+  "models": [
+    {
+      "key": "glm-5-3",
+      "candidates": ["glm-5.3"],
+      "limits_by_model": {
+        "glm-5.3": {
+          "maxInputTokens": 1048576,
+          "maxOutputTokens": 128000,
+          "sources": {
+            "maxInputTokens": "https://docs.z.ai/guides/overview/migrate-to-glm-new",
+            "maxOutputTokens": "https://docs.z.ai/guides/overview/migrate-to-glm-new"
+          }
+        }
+      },
+      "workbuddy": {
+        "displayName": "GLM 5.3",
+        "supportsToolCall": true,
+        "supportsImages": false,
+        "supportsReasoning": false,
+        "useCustomProtocol": true,
+        "onlyReasoning": false
+      }
+    }
+  ]
+}

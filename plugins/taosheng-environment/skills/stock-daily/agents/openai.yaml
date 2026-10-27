@@ -1,0 +1,4 @@
+interface:
+  display_name: "复盘"
+  short_description: "判定盘面环境、更新主线状态、提名候选、按纪律卡做持仓对照"
+  default_prompt: "使用 $stock-daily 按项目运行配置执行完整复盘，接续上次判断、走完五区核查并报告证据缺口。"

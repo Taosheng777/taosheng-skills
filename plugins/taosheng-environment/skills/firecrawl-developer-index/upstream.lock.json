@@ -1,0 +1,10 @@
+{
+  "skill": "firecrawl-developer-index",
+  "repository": "firecrawl/skills",
+  "base": "f6c9b2dd6384e0f05f713727ed18ba9db94d5191",
+  "commit": "2bf714d9f45e85085036a533ceb943c8577aef2b",
+  "changed": [
+    "references/official-documentation.md",
+    "SKILL.md"
+  ]
+}

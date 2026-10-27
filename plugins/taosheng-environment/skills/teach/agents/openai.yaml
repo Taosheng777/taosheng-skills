@@ -1,0 +1,6 @@
+interface:
+  display_name: "Teach 学习教练"
+  short_description: "基于真实情境、可靠证据和迁移反馈的短课学习教练"
+  default_prompt: "使用 $teach 结合我的真实工作材料，给我上一节可完成、可反馈的短课。"
+policy:
+  allow_implicit_invocation: false

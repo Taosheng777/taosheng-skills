@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "repository": "nyblnet/bento",
+  "release": {
+    "tag": "v1.0.19",
+    "commit": "01000838496ec863ba1035eae12a8a4943020cdc",
+    "published_at": "2026-09-04T22:49:40Z",
+    "synced_at": "2026-09-07T06:43:19.025055Z"
+  },
+  "files": {
+    "assets/bento/Bento_Slides.bento.html": {
+      "source": "release:Bento_Slides.bento.html",
+      "sha256": "33a1a0af104abe1687d7d81e6a7446e179ba515679450f3e1c527ce02681b62a",
+      "bytes": 694151
+    },
+    "references/upstream/bento-agents.md": {
+      "source": "repository:docs/agents.md",
+      "sha256": "73201bbaca535ee7628a00afed5670dc37d8b9f1481873b210d3682865841e17",
+      "bytes": 27927
+    },
+    "references/upstream/bento-format.md": {
+      "source": "repository:docs/format.md",
+      "sha256": "36bc2086a532892ccfcb73ff78968014c0ddd11b247b49d9d79cf2d7ad7fe523",
+      "bytes": 18931
+    },
+    "references/upstream/bento-official-skill.md": {
+      "source": "repository:plugins/bento-slides/skills/bento-slides/SKILL.md",
+      "sha256": "02396087b64a73381a24725aecee70426517c5e6994b705dffafd3f9c2e010c7",
+      "bytes": 7529
+    }
+  }
+}

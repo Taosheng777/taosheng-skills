@@ -4,22 +4,11 @@
     "name": "涛生",
     "url": "https://github.com/Taosheng777"
   },
-  "description": "涛生的 AI 工作习惯与视频工作台：科普写作、协作方法与固定收藏的视频创作流程。",
   "plugins": [
     {
-      "name": "taosheng-popsci",
-      "source": "./plugins/taosheng-popsci",
-      "description": "中文健康科普写作：有活人感、站得住、不灌水。"
-    },
-    {
-      "name": "taosheng-work",
-      "source": "./plugins/taosheng-work",
-      "description": "和 AI 一起干活的习惯：说人话、阶段完成用人话汇报、检索微信公众号文章。"
-    },
-    {
-      "name": "taosheng-video",
-      "source": "./plugins/taosheng-video",
-      "description": "2026-10-25 固定快照：视频风格看板、医学科普与通用短片流程。"
+      "name": "taosheng-environment",
+      "source": "./plugins/taosheng-environment",
+      "description": "涛生完整技能环境：老爷爷、科研、表达、开发、视频与资料工具"
     }
   ]
 }

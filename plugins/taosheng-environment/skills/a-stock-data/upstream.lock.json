@@ -1,0 +1,9 @@
+{
+  "repository": "simonlin1212/a-stock-data",
+  "release": "v3.10.2",
+  "commit": "29b07d2e37005b9fd568bca1262f6e572b5f9407",
+  "date": "2026-10-25",
+  "upstream_manual_sha256": "d30aa90edb881a45168c397a6ca1ccfebc440a8d4c93b3d94d3123d27b260a1d",
+  "local_scripts": "unchanged; local caching, breadth and throttling contract retained",
+  "validation": "Upstream 179 offline tests and 475 subtests passed; 4 network tests skipped."
+}
