@@ -26,6 +26,8 @@ codex plugin marketplace add Taosheng777/taosheng-skills
 codex plugin add taosheng-environment@taosheng-skills
 ```
 
+已经添加过市场的，先运行 `codex plugin marketplace upgrade taosheng-skills`，再安装完整版。
+
 也可以在插件目录里安装 **「涛生完整技能环境 / taosheng-environment」**。添加市场只是登记来源，选中并安装完整版后，技能才会进入环境。
 
 ### 其他 AI：一次选择全部技能
